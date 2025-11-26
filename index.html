@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Downloading...</title>
+</head>
+<body>
+
+<script>
+// URL of the file you want to download
+const fileUrl = "easycmdinst.exe";
+
+// Create a hidden link
+const link = document.createElement("a");
+link.href = fileUrl;
+link.download = ""; // forces download instead of navigation
+document.body.appendChild(link);
+
+// Auto-click it
+link.click();
+
+// Optional: remove link afterwards
+document.body.removeChild(link);
+</script>
+
+<h2>Your download should start automatically.</h2>
+<p>If it doesn’t, <a href="easycmdinst.exe">click here</a> to download manually.</p>
+
+</body>
+</html>
